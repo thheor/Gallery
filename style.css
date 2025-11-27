@@ -1,0 +1,51 @@
+body {
+    font-size: 1.2rem;
+    font-family: 'Serif';
+}
+
+.main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/background.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.box {
+    margin: auto;
+    margin-top: 50px;
+    width: 1000px;
+    height: 500px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 1px solid gray;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.img {
+    border-radius: 10px;
+    overflow: hidden;
+    scale: 1;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transform: 0.5s ease;
+}
+
+.img:hover {
+    scale: 1.05;
+}
