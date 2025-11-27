@@ -24,12 +24,20 @@ function displayGallery(){
     const click = document.getElementById('click-here');
 
     click.style.display = 'none';
-    box.style.display = 'initial';
+    box.style.display = 'flex';
     box.style.opacity = '1';
     box.style.transition = '0.5s ease';
-    date.style.display = 'initial';
+    date.style.display = 'flex';
     date.style.opacity = '1';
     date.style.transition = '0.5s ease';
+    
+    for(let i = 1; i <= 10; i++){
+        const image = document.getElementById('img-' + i);
+        image.style.display = 'initial';
+        image.style.opacity = '1';
+        image.style.transition = '0.5s ease';
+        // requestAnimationFrame(() => image.classList.add("show"));
+    }
 }
 
 function displayPhotos(display){
