@@ -8,20 +8,31 @@
 </head>
 <body>
     <section id="main" class="main">
+        <!-- <div id="click-here" class="click-here" onclick="displayGallery()">
+            <h1>Click Here!</h1>
+        </div> -->
         <div id="box" class="box">
             <div id="album" class="album">
-                <img src="img/gal/1.png" class="img">
-                <img src="img/gal/2.png" class="img">
-                <img src="img/gal/3.png" class="img">
-                <img src="img/gal/4.png" class="img">
-                <img src="img/gal/5.png" class="img">
-                <img src="img/gal/6.png" class="img">
-                <img src="img/gal/7.png" class="img">
-                <img src="img/gal/8.png" class="img">
-                <img src="img/gal/9.png" class="img">
-                <img src="img/gal/10.png" class="img">
+                <img src="img/gal/all_photos/1.png" class="img" id="img-1">
+                <img src="img/gal/all_photos/2.png" class="img" id="img-2">
+                <img src="img/gal/all_photos/3.png" class="img" id="img-3">
+                <img src="img/gal/all_photos/4.png" class="img" id="img-4">
+                <img src="img/gal/all_photos/5.png" class="img" id="img-5">
+                <img src="img/gal/all_photos/6.png" class="img" id="img-6">
+                <img src="img/gal/all_photos/7.png" class="img" id="img-7">
+                <img src="img/gal/all_photos/8.png" class="img" id="img-8">
+                <img src="img/gal/all_photos/9.png" class="img" id="img-9">
+                <img src="img/gal/all_photos/10.png" class="img" id="img-10">
             </div>
         </div>
+        <div class="date" id="date">
+            <button onclick="displayPhotos(9)">Years</button>
+            <button onclick="displayPhotos(8)">Months</button>
+            <button onclick="displayPhotos(7)">Days</button>
+            <button onclick="displayPhotos(10)">All Photos</button>
+        </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
