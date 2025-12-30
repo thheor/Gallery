@@ -18,7 +18,14 @@ body {
     z-index: -1;
 }
 
-.click-here h1 {
+.click-here {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.click-here a {
+    text-decoration: none;
     cursor: pointer;
     color: azure;
     text-shadow: rgba(0, 0, 0, 0.5) 2px 0 2px;
@@ -26,11 +33,11 @@ body {
     text-align: center;
     margin-top: 350px;
     scale: 0.9;
+    transition: 0.2s ease;
 }
 
-.click-here h1:hover {
-    transition: 0.2s ease;
-    scale: 1;
+.click-here a:hover {
+    scale: 0.95;
 }
 
 .box {
@@ -42,11 +49,11 @@ body {
     backdrop-filter: blur(10px);
     border: 1px solid gray;
     border-radius: 40px;
-    /* display: flex; */
+    display: flex;
     align-items: center;
     position: relative;
     z-index: 1;
-    opacity: 0;
+    /* opacity: 0; */
     transition: 0.5s ease;
     transform: 0.5s ease;
 }
@@ -60,12 +67,12 @@ body {
     border-radius: 30px;
     margin: auto;
     margin-top: -20px;
-    /* display: flex; */
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
     position: relative;
     z-index: 2;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 .date button {
@@ -84,7 +91,7 @@ body {
 
 .date button:hover {
     background-color: rgba(255, 255, 255, 0.2);
-    scale: 1.1;
+    scale: 1.01;
     backdrop-filter: blur(10px);
 }
 
@@ -105,7 +112,7 @@ body {
     transition-duration: 0.5s;
     transition-timing-function: ease;
     transform: 0.5s ease;
-    opacity: 0;
+    /* opacity: 0; */
     /* transition: opacity 0.5s ease; */
 }
 
